@@ -64,6 +64,15 @@ services:
       - docker_elk
     depends_on:
       - elasticsearch
+  fluentd:
+    image: fluent/fluentd:latest
+    ports:
+      - "24224:24224"
+    volumes:
+      - ./fluentd/etc:/fluentd/etc
+    command: /fluentd/etc/start.sh
+    networks:
+      - docker_elk    
 
   db:
     image: postgres:9.4
