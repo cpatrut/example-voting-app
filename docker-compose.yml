@@ -7,7 +7,7 @@ services:
     volumes:
      - ./vote:/app
     ports:
-      - "5000:80"
+      - "8080:80"
     networks:
       - front-tier
       - back-tier
@@ -35,14 +35,14 @@ services:
     ports: ["6379"]
     networks:
       - back-tier
- elasticsearch:
-    build: elasticsearch/
-    ports:
+  elasticsearch:
+     build: elasticsearch/
+     ports:
       - "9200:9200"
       - "9300:9300"
-    environment:
-      ES_JAVA_OPTS: "-Xms1g -Xmx1g"
-    networks:
+     environment:
+       ES_JAVA_OPTS: "-Xms1g -Xmx1g"
+     networks:
       - docker_elk
   logstash:
     build: logstash/
