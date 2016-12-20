@@ -12,3 +12,4 @@ The demo-app will be running at [http://localhost:5000](http://localhost:5000), 
 The nginx reverse proxy will be running at [http://{DOCKER_MACHINE_IP_ADDRESS}:8080](http://localhost:8080) and it will forward your requests on port 5050 (to the demo-app).
 
 ##Architecure:
+![Architecture diagram](architecture.png)
