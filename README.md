@@ -4,7 +4,8 @@
 
 ### For being able to run these docker images locally you might need to follow this tutorial: [DED0033 - CC Development Environment Installation Manual](https://bitbucket/projects/ENET/repos/environment/browse/docs/DED0033-Development-environment-installation-manual.md)
 
-The app will be running at [http://localhost:5000](http://localhost:5000), and the results will be at [http://localhost:5001](http://localhost:5001).
+The demo-app will be running at [http://localhost:5000](http://localhost:5000), and the results of the demo-app will be at [http://localhost:5001](http://DOCKER_MACHINE_IP_ADDRESS:5001).
+The nginx reverse proxy will be running at [http://{DOCKER_MACHINE_IP_ADDRESS}:8080](http://localhost:8080) and it will forward your requests on port 5050 (to the demo-app).
 
 Architecture
 -----
