@@ -2,7 +2,7 @@
 
 # This repository contains the source code for the cc-revisionlog solution.
 
-For being able to run these docker images locally you might need to follow this tutorial: [DED0033 - CC Development Environment Installation Manual](https://bitbucket/projects/ENET/repos/environment/browse/docs/setup-developer-environment.md)
+### For being able to run these docker images locally you might need to follow this tutorial: [DED0033 - CC Development Environment Installation Manual](https://bitbucket/projects/ENET/repos/environment/browse/docs/DED0033-Development-environment-installation-manual.md)
 
 The app will be running at [http://localhost:5000](http://localhost:5000), and the results will be at [http://localhost:5001](http://localhost:5001).
 
